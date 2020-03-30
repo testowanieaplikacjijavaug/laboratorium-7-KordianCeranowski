@@ -1,0 +1,2 @@
+[![Build Status](https://travis-ci.com/testowanieaplikacjijavaug/laboratorium-7-KordianCeranowski.svg?branch=master)](https://travis-ci.com/testowanieaplikacjijavaug/laboratorium-7-KordianCeranowski)
+[![codecov](https://codecov.io/gh/testowanieaplikacjijavaug/laboratorium-7-KordianCeranowski/badge.svg)](https://codecov.io/gh/testowanieaplikacjijavaug/laboratorium-7-KordianCeranowski)

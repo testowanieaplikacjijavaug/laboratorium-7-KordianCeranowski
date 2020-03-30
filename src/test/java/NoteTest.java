@@ -20,7 +20,6 @@ class NoteTest {
                 .isEqualTo(3);
     }
 
-
     @Test
     void NullStringTest(){
         assertThatThrownBy(() -> Note.of(null, 3))
@@ -37,14 +36,14 @@ class NoteTest {
 
     @Test
     void TooLowNoteTest(){
-        assertThatThrownBy(() -> Note.of("name", 2))
+        assertThatThrownBy(() -> Note.of("name", 1))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Niewłaściwa ocena");
     }
 
     @Test
     void TooHighNoteTest(){
-        assertThatThrownBy(() -> Note.of("a", 6))
+        assertThatThrownBy(() -> Note.of("a", 7))
                 .isInstanceOf(IllegalArgumentException.class)
                 .hasMessage("Niewłaściwa ocena");
     }
