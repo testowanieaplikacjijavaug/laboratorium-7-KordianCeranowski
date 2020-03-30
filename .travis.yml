@@ -1,5 +1,8 @@
 language: java
 sudo: false
 
+global:
+  - CODECOV_TOKEN="7dbee9c0-453f-4a71-98f9-1d7d4f74698f"
+
 after_success:
   - bash <(curl -s https://codecov.io/bash)
