@@ -1,3 +1,5 @@
+package zad1;
+
 import java.io.Serializable;
 import com.google.common.base.Preconditions;
 

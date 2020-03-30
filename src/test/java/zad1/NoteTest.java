@@ -1,22 +1,25 @@
+package zad1;
+
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.*;
 
 class NoteTest {
     @Test
     void TypeTest(){
-        assertThat(Note.of("name", 3))
+        Assertions.assertThat(Note.of("name", 3))
                 .isInstanceOf(Note.class);
     }
 
     @Test
     void getNameTest(){
-        assertThat(Note.of("name test", 3).getName())
+        Assertions.assertThat(Note.of("name test", 3).getName())
                 .isEqualTo("name test");
     }
 
     @Test
     void getNoteTest(){
-        assertThat(Note.of("name", 3).getNote())
+        Assertions.assertThat(Note.of("name", 3).getNote())
                 .isEqualTo(3);
     }
 
